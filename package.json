@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:resume": "tsx scripts/generate-resume.tsx",
-    "prebuild": "npm run generate:resume"
+    "generate:resume": "tsx scripts/generate-resume.tsx"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

@@ -55,7 +55,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-1.5">
           <ThemeToggle />
           <a
-            href="/atherqureshi_resume.pdf"
+            href="/api/resume"
             download
             className={cn(buttonVariants({ size: "sm" }), "rounded-md")}
           >

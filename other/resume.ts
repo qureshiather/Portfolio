@@ -1,7 +1,7 @@
 /**
  * Single source of truth for resume + portfolio content.
- * Edit this file, then run: npm run generate:resume
- * The PDF is designed to fit on ONE page.
+ * Edit this file — the site serves a PDF on demand from /api/resume.
+ * Keep content concise so the PDF stays ONE page.
  */
 
 export type ResumeLink = {
@@ -97,9 +97,8 @@ export const resume: ResumeData = {
       start: "Aug 2025",
       end: "Present",
       highlights: [
-        "5th employee and 2nd engineer, building the product 0->1 as a full-stack engineer - data ingestion, core platform, and shipping features end-to-end.",
+        "2nd engineer at Senpilot, helping take the product and engineering organization from 0->1 and 1->n.",
         "Created the ingestion pipeline and introduced Dagster to bring utility data from GIS, AMI, SCADA, and OMS into one unified data model.",
-        "Scaling the company from 1->n customers and helping grow the engineering team from 1->n.",
       ],
     },
     {
@@ -165,7 +164,7 @@ export const resume: ResumeData = {
 export const portfolio = {
   tagline: "Building platforms, services, and tools that scale.",
   about:
-    "I am a full-stack software engineer based in the GTA. Currently at Senpilot as the 5th employee and 2nd engineer, building product 0->1 and helping scale customers and the team. Previously shipped microservices, ML systems, data platforms, and frontend infrastructure at Carta and Bell. I care about clear architecture, developer experience, and work that ships.",
+    "I am a full-stack software engineer based in the GTA. Currently at Senpilot as the 2nd engineer, helping take the product and engineering from 0->1 and 1->n. Previously shipped microservices, ML systems, data platforms, and frontend infrastructure at Carta and Bell. I care about clear architecture, developer experience, and work that ships.",
   interests: [
     {
       title: "Engineering",

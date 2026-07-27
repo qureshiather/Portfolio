@@ -94,7 +94,7 @@ export function Hero() {
           className="mt-8 flex flex-wrap items-center gap-3"
         >
           <a
-            href="/atherqureshi_resume.pdf"
+            href="/api/resume"
             download
             className={cn(buttonVariants({ size: "lg" }), "gap-2 rounded-md px-5")}
           >
