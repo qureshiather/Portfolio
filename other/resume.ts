@@ -49,7 +49,6 @@ export type ResumeData = {
   skills: SkillGroup[];
   experience: ExperienceRole[];
   education: Education[];
-  certifications: string[];
   extracurricular: string[];
 };
 
@@ -100,7 +99,8 @@ export const resume: ResumeData = {
       start: "Aug 2025",
       end: "Present",
       highlights: [
-        "Early engineer (#5) building the product 0->1 as a full-stack engineer - data ingestion, core platform, and shipping features end-to-end.",
+        "5th employee and 2nd engineer, building the product 0->1 as a full-stack engineer - data ingestion, core platform, and shipping features end-to-end.",
+        "Created the ingestion pipeline and introduced Dagster to bring utility data from GIS, AMI, SCADA, and OMS into one unified data model.",
         "Scaling the company from 1->n customers and helping grow the engineering team from 1->n.",
       ],
     },
@@ -123,6 +123,7 @@ export const resume: ResumeData = {
       end: "Jan 2022",
       highlights: [
         "Promoted E2->E3 after 8 months. Finance-Automation: subscriptions, payments, and contracts.",
+        "Built billing/subscription reconciliation as Carta's first Kafka use case, using Faust.",
         "Migrated Django monolith domains to gRPC microservices; owned CI/CD and monitoring. Lead on a real-time Kafka microservice (Python).",
       ],
     },
@@ -156,11 +157,6 @@ export const resume: ResumeData = {
       notes: ["Western Scholarship of Distinction", "Dean's List"],
     },
   ],
-  certifications: [
-    "Udacity Full Stack Web Developer Nanodegree",
-    "Machine Learning - Stanford University (Coursera)",
-    "Teradata: Introduction / Advanced SQL Features",
-  ],
   extracurricular: [
     "President, Western Pakistani Students Association - $2k budget, 150 members",
     "Speaker, Toronto Machine Learning Series Micro Summit (Insurance & Telco, 2018)",
@@ -171,7 +167,7 @@ export const resume: ResumeData = {
 export const portfolio = {
   tagline: "Building platforms, services, and tools that scale.",
   about:
-    "I am a full-stack software engineer based in the GTA. Currently at Senpilot as an early engineer, building product 0->1 and helping scale customers and the team. Previously shipped microservices, ML systems, data platforms, and frontend infrastructure at Carta and Bell. I care about clear architecture, developer experience, and work that ships.",
+    "I am a full-stack software engineer based in the GTA. Currently at Senpilot as the 5th employee and 2nd engineer, building product 0->1 and helping scale customers and the team. Previously shipped microservices, ML systems, data platforms, and frontend infrastructure at Carta and Bell. I care about clear architecture, developer experience, and work that ships.",
   interests: [
     {
       title: "Engineering",

@@ -180,7 +180,6 @@ export function ResumeDocument() {
     skills,
     experience,
     education,
-    certifications,
     extracurricular,
   } = resume;
 
@@ -265,15 +264,6 @@ export function ResumeDocument() {
                 <Text style={styles.listItem}>{edu.notes.join("  ·  ")}</Text>
               ) : null}
             </View>
-          ))}
-        </View>
-
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Certifications</Text>
-          {certifications.map((c) => (
-            <Text key={c} style={styles.listItem}>
-              •  {c}
-            </Text>
           ))}
         </View>
 
