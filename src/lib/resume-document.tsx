@@ -173,7 +173,6 @@ export function ResumeDocument() {
     name,
     title,
     email,
-    phone,
     location,
     links,
     summary,
@@ -196,8 +195,6 @@ export function ResumeDocument() {
           <Text style={styles.title}>{title}</Text>
           <View style={styles.contactRow}>
             <Text style={styles.contactItem}>{email}</Text>
-            <ContactSep />
-            <Text style={styles.contactItem}>{phone}</Text>
             <ContactSep />
             <Text style={styles.contactItem}>{location}</Text>
             {links.map((link) => (

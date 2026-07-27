@@ -42,7 +42,6 @@ export type ResumeData = {
   name: string;
   title: string;
   email: string;
-  phone: string;
   location: string;
   links: ResumeLink[];
   summary: string;
@@ -56,7 +55,6 @@ export const resume: ResumeData = {
   name: "Ather Qureshi",
   title: "Senior Software Engineer",
   email: "atherqureshi07@gmail.com",
-  phone: "(+1) 647-383-7332",
   location: "Greater Toronto Area",
   links: [
     { label: "GitHub", url: "https://github.com/qureshiather" },
