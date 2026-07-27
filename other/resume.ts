@@ -63,7 +63,7 @@ export const resume: ResumeData = {
     { label: "Writing", url: "https://atherqureshi.substack.com/" },
   ],
   summary:
-    "Full-stack engineer with experience building services and tooling for developers and customers. Strong in design patterns, system architecture, and end-to-end delivery. Comfortable leading technical work, collaborating with PMs and stakeholders, and picking up new stacks quickly.",
+    "Full-stack software engineer based in the Greater Toronto Area. Currently at Senpilot as the second engineer. Previously at Carta and Bell. I love to solve problems and have worked all across the stack.",
   skills: [
     {
       label: "Languages",
@@ -97,8 +97,9 @@ export const resume: ResumeData = {
       start: "Aug 2025",
       end: "Present",
       highlights: [
-        "2nd engineer at Senpilot, helping take the product and engineering organization from 0->1 and 1->n.",
+        "Second engineer on the team, helping take product and engineering from 0->1 to 1->n.",
         "Created the ingestion pipeline and introduced Dagster to bring utility data from GIS, AMI, SCADA, and OMS into one unified data model.",
+        "Shipped core features end-to-end and helped build the bedrock for the entire platform.",
       ],
     },
     {
@@ -162,9 +163,9 @@ export const resume: ResumeData = {
 
 /** Portfolio-only extras (not printed on the one-page PDF). */
 export const portfolio = {
-  tagline: "Building platforms, services, and tools that scale.",
+  tagline: "Full-stack software engineer in the Greater Toronto Area.",
   about:
-    "I am a full-stack software engineer based in the GTA. Currently at Senpilot as the 2nd engineer, helping take the product and engineering from 0->1 and 1->n. Previously shipped microservices, ML systems, data platforms, and frontend infrastructure at Carta and Bell. I care about clear architecture, developer experience, and work that ships.",
+    "I am a full-stack software engineer based in the Greater Toronto Area. Currently, I work at Senpilot as the second engineer. Previously, I worked at Carta and Bell. I love to solve problems, and have worked all across the stack.",
   interests: [
     {
       title: "Engineering",

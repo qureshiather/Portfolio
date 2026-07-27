@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDownRight, FileDown } from "lucide-react";
+import { ArrowDownRight, FileText } from "lucide-react";
 import { resume, portfolio } from "@data/resume";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -95,11 +95,12 @@ export function Hero() {
         >
           <a
             href="/api/resume"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className={cn(buttonVariants({ size: "lg" }), "gap-2 rounded-md px-5")}
           >
-            <FileDown className="size-4" />
-            Download resume
+            <FileText className="size-4" />
+            View resume
           </a>
           <a
             href="#contact"

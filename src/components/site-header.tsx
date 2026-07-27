@@ -56,7 +56,8 @@ export function SiteHeader() {
           <ThemeToggle />
           <a
             href="/api/resume"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className={cn(buttonVariants({ size: "sm" }), "rounded-md")}
           >
             Resume

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { portfolio, resume } from "@data/resume";
+import { portfolio } from "@data/resume";
 
 export function About() {
   return (
@@ -25,8 +25,8 @@ export function About() {
         >
           <p>{portfolio.about}</p>
           <p>
-            Currently based in {resume.location}. Open to conversations about
-            platforms, product engineering, and thoughtful systems work.
+            Open to conversations about platforms, product engineering, and
+            thoughtful systems work.
           </p>
         </motion.div>
       </div>
