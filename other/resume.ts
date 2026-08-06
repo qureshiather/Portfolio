@@ -63,7 +63,7 @@ export const resume: ResumeData = {
     { label: "Writing", url: "https://atherqureshi.substack.com/" },
   ],
   summary:
-    "Full-stack software engineer based in the Greater Toronto Area. Currently at Senpilot as the second engineer. Previously at Carta and Bell. I love to solve problems and have worked all across the stack.",
+    "Currently, I work at Senpilot as a senior software engineer. Previously, I worked at Carta and Bell. I love to solve thorny problems and I have extensive experience all across multiple facets of software engineering.",
   skills: [
     {
       label: "Languages",
@@ -97,7 +97,7 @@ export const resume: ResumeData = {
       start: "Aug 2025",
       end: "Present",
       highlights: [
-        "Second engineer on the team, helping take product and engineering from 0->1 to 1->n.",
+        "Helped take the product and engineering from 0->1, and now from 1->n.",
         "Created the ingestion pipeline and introduced Dagster to bring utility data from GIS, AMI, SCADA, and OMS into one unified data model.",
         "Shipped core features end-to-end and helped build the bedrock for the entire platform.",
       ],
@@ -122,7 +122,6 @@ export const resume: ResumeData = {
       highlights: [
         "Promoted E2->E3 after 8 months. Finance-Automation: subscriptions, payments, and contracts.",
         "Built billing/subscription reconciliation as Carta's first Kafka use case, using Faust.",
-        "Migrated Django monolith domains to gRPC microservices; owned CI/CD and monitoring. Lead on a real-time Kafka microservice (Python).",
       ],
     },
     {
@@ -165,7 +164,7 @@ export const resume: ResumeData = {
 export const portfolio = {
   tagline: "Full-stack software engineer in the Greater Toronto Area.",
   about:
-    "I am a full-stack software engineer based in the Greater Toronto Area. Currently, I work at Senpilot as the second engineer. Previously, I worked at Carta and Bell. I love to solve problems, and have worked all across the stack.",
+    "Currently, I work at Senpilot as a senior software engineer. Previously, I worked at Carta and Bell. I love to solve thorny problems and I have extensive experience all across multiple facets of software engineering.",
   interests: [
     {
       title: "Engineering",
