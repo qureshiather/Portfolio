@@ -37,17 +37,19 @@ export function Contact() {
             }}
           />
           <div className="relative">
-            <p className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-signal">
-              06
+            <p className="font-mono text-[0.7rem] tracking-[0.18em] text-signal">
+              <span className="text-muted-foreground">{"//"}</span> 06
             </p>
-            <div className="signal-rule mt-4" />
+            <div className="mt-4 flex items-center gap-3">
+              <div className="signal-rule" />
+            </div>
             <h2 className="mt-6 font-heading text-balance text-3xl font-semibold tracking-tight md:text-5xl">
               Let&apos;s build something.
             </h2>
-            <p className="mt-4 max-w-lg text-pretty text-muted-foreground">
+            <p className="mt-4 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground">
               Reach out for roles, collaborations, or just to say hello.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-9 flex flex-wrap gap-3">
               <a
                 href={`mailto:${resume.email}`}
                 className={cn(

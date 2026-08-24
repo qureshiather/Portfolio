@@ -21,14 +21,14 @@ export function SectionHeading({
       transition={{ duration: 0.45 }}
       className="max-w-2xl"
     >
-      <p className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-signal">
-        {index}
+      <p className="font-mono text-[0.7rem] tracking-[0.18em] text-signal">
+        <span className="text-muted-foreground">{"//"}</span> {index}
       </p>
-      <h2 className="mt-3 font-heading text-balance text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+      <h2 className="mt-4 font-heading text-balance text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
         {title}
       </h2>
       {description ? (
-        <p className="mt-3 max-w-xl text-pretty text-muted-foreground">
+        <p className="mt-3 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground">
           {description}
         </p>
       ) : null}

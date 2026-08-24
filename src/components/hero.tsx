@@ -15,9 +15,13 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div
           aria-hidden="true"
-          className="absolute -right-4 top-24 hidden select-none font-heading text-[clamp(7rem,24vw,15rem)] font-semibold leading-none tracking-tighter text-ink/[0.035] dark:text-foreground/[0.04] sm:block"
+          className="absolute left-1/2 top-10 h-64 w-[36rem] -translate-x-1/2 rounded-full bg-signal/15 blur-3xl dark:bg-signal/20"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute -right-4 top-24 hidden select-none font-mono text-[clamp(5rem,18vw,11rem)] font-medium leading-none tracking-tighter text-signal/[0.07] dark:text-signal/[0.1] sm:block"
         >
-          AQ
+          {"</>"}
         </div>
       </div>
 
@@ -28,7 +32,7 @@ export function Hero() {
           transition={{ duration: 0.4 }}
           className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-signal"
         >
-          Portfolio · {resume.location}
+          {`~/portfolio · ${resume.location}`}
         </motion.p>
 
         <motion.div
@@ -53,9 +57,9 @@ export function Hero() {
           transition={{ duration: 0.55, delay: 0.14 }}
           className="mt-6 max-w-2xl"
         >
-          <p className="text-lg text-foreground md:text-xl">
+          <p className="font-mono text-sm text-signal md:text-base">
             {resume.title}
-            <span className="text-muted-foreground"> · Senpilot</span>
+            <span className="text-muted-foreground"> @ senpilot</span>
           </p>
           <p className="mt-3 text-base text-pretty text-muted-foreground md:text-lg">
             I build platforms and product systems—and dig into the thorny

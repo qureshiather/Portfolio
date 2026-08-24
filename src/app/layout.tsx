@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Source_Sans_3, IBM_Plex_Mono } from "next/font/google";
+import { Space_Grotesk, Source_Sans_3, IBM_Plex_Mono } from "next/font/google";
 import { resume } from "@data/resume";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
+const spaceGrotesk = Space_Grotesk({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["500", "600", "700"],
@@ -41,7 +41,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${bricolage.variable} ${sourceSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
+      className={`${spaceGrotesk.variable} ${sourceSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
         <div className="site-atmosphere" aria-hidden="true" />

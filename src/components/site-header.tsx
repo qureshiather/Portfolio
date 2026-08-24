@@ -40,7 +40,7 @@ export function SiteHeader() {
           className="rounded-sm font-heading text-sm font-semibold tracking-tight text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           {resume.name.split(" ")[0]}
-          <span className="text-signal">.</span>
+          <span className="text-signal">_</span>
         </a>
         <nav aria-label="Primary" className="hidden items-center gap-5 lg:flex">
           {links.map((link) => (

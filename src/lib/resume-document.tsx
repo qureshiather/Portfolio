@@ -15,7 +15,7 @@ const C = {
   body: "#1a2332",
   muted: "#5b6b7c",
   line: "#d5dde6",
-  signal: "#c45c26",
+  signal: "#3b82f6",
   panel: "#f3f5f7",
 };
 
