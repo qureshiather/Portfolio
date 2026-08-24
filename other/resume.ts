@@ -97,7 +97,7 @@ export const resume: ResumeData = {
       start: "Aug 2025",
       end: "Present",
       highlights: [
-        "Helped take the product and engineering from 0->1, and now from 1->n.",
+        "Helped build product and engineering from the ground up, and now through early enterprise scale.",
         "Created the ingestion pipeline and introduced Dagster to bring utility data from GIS, AMI, SCADA, and OMS into one unified data model.",
         "Shipped core features end-to-end and helped build the bedrock for the entire platform.",
       ],
@@ -120,7 +120,7 @@ export const resume: ResumeData = {
       start: "Feb 2020",
       end: "Jan 2022",
       highlights: [
-        "Promoted E2->E3 after 8 months. Finance-Automation: subscriptions, payments, and contracts.",
+        "Finance-Automation: subscriptions, payments, and contracts.",
         "Built billing/subscription reconciliation as Carta's first Kafka use case, using Faust.",
       ],
     },
@@ -162,7 +162,7 @@ export const resume: ResumeData = {
 
 /** Portfolio-only extras (not printed on the one-page PDF). */
 export const portfolio = {
-  tagline: "Full-stack software engineer in the Greater Toronto Area.",
+  tagline: "Senior software engineer in the Greater Toronto Area.",
   about:
     "Currently, I work at Senpilot as a senior software engineer. Previously, I worked at Carta and Bell. I love to solve thorny problems and I have extensive experience all across multiple facets of software engineering.",
   interests: [
@@ -185,7 +185,8 @@ export const portfolio = {
   projects: [
     {
       title: "Solstice",
-      description: "Interactive math generator built with p5.js - playful visual explorations of math.",
+      description:
+        "Interactive math generator built with p5.js — playful visual explorations of math.",
       href: "https://solstice-p5js.vercel.app/",
       code: "https://github.com/qureshiather/Solstice",
     },

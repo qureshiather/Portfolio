@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Source_Sans_3, IBM_Plex_Mono } from "next/font/google";
 import { resume } from "@data/resume";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const syne = Syne({
+const bricolage = Bricolage_Grotesque({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["500", "600", "700"],
 });
 
-const dmSans = DM_Sans({
+const sourceSans = Source_Sans_3({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-mono",
   subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -40,9 +41,11 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${syne.variable} ${dmSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${bricolage.variable} ${sourceSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="flex min-h-full flex-col font-sans">
+        <div className="site-atmosphere" aria-hidden="true" />
+        <div className="site-grain" aria-hidden="true" />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

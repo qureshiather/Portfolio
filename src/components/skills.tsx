@@ -2,23 +2,19 @@
 
 import { motion } from "framer-motion";
 import { resume } from "@data/resume";
-import { Badge } from "@/components/ui/badge";
+import { SectionHeading } from "@/components/section-heading";
 
 export function Skills() {
   return (
-    <section id="skills" className="scroll-mt-24 border-t border-border/70 py-24">
+    <section id="skills" className="scroll-mt-16 border-t border-border/70 pt-12 pb-20 md:pt-14 md:pb-24">
       <div className="mx-auto max-w-5xl px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.45 }}
-          className="font-heading text-3xl font-semibold tracking-tight md:text-4xl"
-        >
-          Skills
-        </motion.h2>
+        <SectionHeading
+          index="04"
+          title="Skills"
+          description="Tools I reach for across product, platform, and data work."
+        />
 
-        <div className="mt-12 grid gap-10 md:grid-cols-3">
+        <div className="mt-14 grid gap-10 md:grid-cols-3">
           {resume.skills.map((group, index) => (
             <motion.div
               key={group.label}
@@ -26,21 +22,21 @@ export function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.4, delay: index * 0.06 }}
+              className="border-t border-border/80 pt-6"
             >
-              <h3 className="text-sm font-medium uppercase tracking-[0.14em] text-teal-800 dark:text-teal-300">
+              <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-signal">
                 {group.label}
               </h3>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <ul className="mt-4 space-y-2">
                 {group.items.map((item) => (
-                  <Badge
+                  <li
                     key={item}
-                    variant="secondary"
-                    className="rounded-md px-2.5 py-1 text-xs font-normal"
+                    className="text-sm text-foreground/90 md:text-[0.95rem]"
                   >
                     {item}
-                  </Badge>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </motion.div>
           ))}
         </div>
