@@ -36,6 +36,8 @@ export type Project = {
   description: string;
   href: string;
   code?: string;
+  /** Also list this project on the generated PDF resume. */
+  onResume?: boolean;
 };
 
 export type ResumeData = {
@@ -189,6 +191,13 @@ export const portfolio = {
         "Interactive math generator built with p5.js — playful visual explorations of math.",
       href: "https://solstice-p5js.vercel.app/",
       code: "https://github.com/qureshiather/Solstice",
+    },
+    {
+      title: "MuscleOS",
+      description:
+        "Free workout tracker for iPhone and Android with structured programs, a library of nearly 400 exercises, and muscle recovery tracking.",
+      href: "https://muscleos.app",
+      onResume: true,
     },
   ] satisfies Project[],
 };
