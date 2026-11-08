@@ -7,7 +7,7 @@ import {
   Link,
   StyleSheet,
 } from "@react-pdf/renderer";
-import { resume } from "../../other/resume";
+import { portfolio, resume } from "../../other/resume";
 
 /** Compact one-page tech resume. Keep content in other/resume.ts lean. */
 const C = {
@@ -202,6 +202,11 @@ const styles = StyleSheet.create({
     color: C.body,
     lineHeight: 1.3,
   },
+  projectLink: {
+    fontFamily: "Helvetica-Bold",
+    color: C.signal,
+    textDecoration: "none",
+  },
   footerBar: {
     position: "absolute",
     bottom: 16,
@@ -296,7 +301,7 @@ export function ResumeDocument() {
               <View style={styles.roleHeader}>
                 <Text style={styles.roleTitle}>{role.title}</Text>
                 <Text style={styles.roleMeta}>
-                  {role.start} → {role.end}
+                  {role.start} – {role.end}
                 </Text>
               </View>
               <Text style={styles.companyLine}>
@@ -314,13 +319,30 @@ export function ResumeDocument() {
         </View>
 
         <View style={styles.section}>
+          <Text style={styles.sectionTitle}>{"// PERSONAL PROJECTS"}</Text>
+          {portfolio.projects
+            .filter((project) => project.onResume)
+            .map((project) => (
+              <View key={project.title} style={styles.listItem}>
+                <Text style={styles.listMark}>{">"}</Text>
+                <Text style={styles.listText}>
+                  <Link src={project.href} style={styles.projectLink}>
+                    {project.title}
+                  </Link>
+                  {` — ${project.description}`}
+                </Text>
+              </View>
+            ))}
+        </View>
+
+        <View style={styles.section}>
           <Text style={styles.sectionTitle}>// EDUCATION</Text>
           {education.map((edu) => (
             <View key={edu.school} wrap={false}>
               <View style={styles.eduHeader}>
                 <Text style={styles.eduSchool}>{edu.school}</Text>
                 <Text style={styles.roleMeta}>
-                  {edu.start} → {edu.end}
+                  {edu.start} – {edu.end}
                 </Text>
               </View>
               <Text style={styles.eduDegree}>{edu.degree}</Text>
